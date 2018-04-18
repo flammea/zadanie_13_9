@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans";
+  background-color: #2ABB9B;
+  color: #FFFFFF;
+  text-align: center;
+}
+input[type="submit" i] {
+	border-radius: 40px;
+	border: 2px solid #FFFFFF;
+	margin: 40px auto;
+	background-color: #AB2E58;
+	color: #FFFFFF;
+	width: 150px;
+	height: 40px;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+input[type="submit" i]:hover {
+	background-color: #FFFFFF;
+	color: #AB2E58;
+	border: 2px solid #AB2E58;
+}
+
+input {
+	  font-family: "Open Sans";
+}
+
+h1 {
+	margin: 50px auto;
+}
+
+form {
+	margin: 20px auto;
+	padding: 10px;
+}
