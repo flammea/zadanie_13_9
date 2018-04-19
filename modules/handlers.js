@@ -10,8 +10,11 @@ exports.upload = function(request, response) {
         urlFile = "./" + files.upload.name;
         urlFile = urlFile.toString();
         fs.renameSync(files.upload.path, urlFile);
-        response.writeHead(200, {"Content-Type": "text/html"});
-        response.write("received image:<br/>");
+    });
+
+    fs.readFile('templates/upload.html',function(err, html){
+        response.writeHead(200, {"Content-Type": "text/html; charset=utf-8"});
+        response.write("Received image:<br/>");
         response.write("<img src='/show' />");
         response.end();
     });
